@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+}
+/*--------------------------------Menu--------------------------------*/
+body{
+    transition: 0.6s;
+}
+.div-ajuda{
+    height: 50px;
+    width: 130px;
+    background-color: black;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    top: 860px;
+    left: 770px;
+}
+.div-ajuda button{
+    color: white;
+    background-color: black;
+    border: none;
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 600;
+
+ 
+}
+.div-ajuda i{
+    
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+hr{
+    height: 20px;
+    background-color: black;
+}
+
+nav{
+    background-color: white;
+    height: 128px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.137);
+    
+   
+}
+nav .navTop{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    padding-top: 20px;
+}
+nav #check{
+    display: none;
+
+}
+nav .checkbtn .fa-bars{
+    font-size: 23px;
+    margin-left: 18px;
+    font-weight: 600;
+} 
+nav .fa-user,.fa-shopping-cart{
+    font-size: 23px;
+    margin-right: 15px;
+    color: black;
+    
+}
+nav .navBottom{
+    text-align: center;
+}
+nav #search{
+    height: 40px;
+    width: 378px;
+    padding: 8px;
+    padding-left: 15px;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: rgba(179, 168, 168, 0.788);
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgba(0, 0, 0, 0.11);
+    border-radius: 5px;
+    /* position: relative; */
+    /* animation: mytest 5s infinite ; */
+}
+/* nav #search{animation-timing-function: ease;} */
+nav #search:hover{
+    border-color: #ff8723;
+    transition: all 0.2s ease-in-out;
+}
+/* @keyframes mytest{
+    from{left: 0px;}
+    to{left: 300px;}
+} */
+nav .navBottom .fa-search{
+    /* background-color: rgb(180, 180, 235); */
+    font-size: 26px;
+    
+    border: none;
+    position: relative;
+    top: 6px;
+    right: 38px;
+}
+
+/*----------------------------Header--------------------------------*/
+
+.space{
+    height: 100px;
+}
+header .div-header1{
+    background-color: black;
+    color: white;
+    height: 74px;
+    padding: 0px 20px;
+
+    font-size: 21px;
+    font-weight: 400;
+    
+    /* position: relative; */
+    bottom: 10px;
+    line-height: 80px;
+}
+header .div-header1 ul{
+    display: flex;
+    justify-content: space-between;
+    
+}
+header .div-header1 ul li a {
+    text-decoration: none;
+    color: white;
+}
+.img-header img{
+    height: 240px;
+    width: 100%;
+
+}
+/* ----------------------produtos---------------------- */
+
+/* ----------------------section 1---------------------- */
+main{
+    height: 1300px;
+    /* background-color: burlywood; */
+}
+main .divH3{
+    /* background-color: khaki; */
+    
+    text-align: center;
+    width: 700px;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 85px;
+    font-size: 40px;
+    text-transform: uppercase;
+ 
+}
+main .produtos div h3{
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 45px;
+    font-family: 'Bebas Neue', cursive; 
+    font-weight: 300;
+
+}
+main .produtos{
+    height: 1062px;
+    display: flex;
+    flex-direction: column;
+}
+main .produtos .bebidas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .box-prod{
+    /* background-color: lawngreen; */
+    height: 600px;
+    width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.div-seta-direita{
+    margin: 10px;
+    margin-right: 20px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    box-shadow: 1px 1px 1px rgb(83, 80, 80);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    margin-bottom: 120px;
+}
+.div-seta-esquerda{
+    margin: 10px;
+    margin-left: 20px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    /* box-shadow: 1px 1px 1px rgb(83, 80, 80); */
+    border-color: rgba(0, 0, 0, 0.37);
+    border-style: solid;
+    border-width: 1px 1px 1px;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+   
+    margin-bottom: 120px;
+}
+
+.seta-esquerda{
+    height: 20px;
+    width: 20px;
+    
+
+}
+.seta-direita{
+    height: 20px;
+    width: 20px;
+}
+main .img{
+    height: 460px;
+    /* margin-bottom: 20px; */
+}
+main .box-prod .div-button button{
+    background-color: black;
+    color: #e8dbaf;
+    border: none;
+
+    margin-top: 30px;
+    height: 65px;
+    width: 190px;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 10px;
+
+    text-transform: uppercase;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/* ------------------------section 2------------------------ */
+.sec2{
+    height: 1500px;
+    background-color:#003416 ;
+    background-image: url(img/backgroud.png);
+    background-repeat: no-repeat;
+}
+.div1-sec2{
+    /* background-color: cadetblue; */
+    height: 480px;
+    margin:  50px;
+    padding: 10px;
+    padding-right: 25px;
+    padding-top: 80PX;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
+.div1-sec2 .div-sec2-img img{
+    height: 280px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+.div1-sec2 .div-sec2-p1{
+    /* background-color: chocolate; */
+    width: 350PX;
+
+}
+.div1-sec2 .div-sec2-p1 h2{
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    font-size: 45px;
+    font-weight: 900;
+    line-height: 87px;
+}
+.div2-sec2{
+    /* background-color: tomato; */
+    width: 400px;
+    margin-left: 500px;
+}
+.div2-sec2 p{
+    width: 325px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    line-height: 27px;
+}
+
